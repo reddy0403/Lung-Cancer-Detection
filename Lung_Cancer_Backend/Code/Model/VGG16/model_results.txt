@@ -1,0 +1,1 @@
+Predicted Class: Adenocarcinoma, Confidence: 1.00
