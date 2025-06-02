@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# Lung Cancer Detection using Deep Learning
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project focuses on detecting **Non-Small Cell Lung Cancer (NSCLC)** from CT scan images using deep learning techniques. The model classifies the cancer into three categories: **Adenocarcinoma**, **Small Cell Carcinoma**, and **Large Cell Carcinoma**.
 
-## Available Scripts
+## 🧠 Models Used
+- Convolutional Neural Network (CNN)
+- VGG16
+- ResNet50
+- InceptionV3
 
-In the project directory, you can run:
+## 📁 Dataset
+The dataset used contains labeled CT scan images of three types of lung cancer:
+- Adenocarcinoma
+- Large Cell Carcinoma
+- Small Cell Carcinoma
 
-### `npm start`
+> [Include dataset source or note if it was from Kaggle, GitHub, or a private dataset]
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ⚙️ Tech Stack
+- Python
+- TensorFlow / Keras
+- NumPy, Pandas
+- OpenCV (for image processing)
+- Matplotlib / Seaborn (for visualization)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📊 Evaluation Metrics
+- **Accuracy**
+- **Precision**
+- **Recall**
+- **F1 Score**
+- **Confusion Matrix**
 
-### `npm test`
+## 🧪 Implementation Steps
+1. **Data Preprocessing**
+   - Resize CT scan images
+   - Normalize pixel values
+   - Label encoding
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Model Building**
+   - Trained CNN from scratch
+   - Fine-tuned VGG16, ResNet50, and InceptionV3
 
-### `npm run build`
+3. **Training**
+   - Split into train, validation, and test sets
+   - Used EarlyStopping and ModelCheckpoint
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+4. **Testing & Validation**
+   - Compared all models
+   - Evaluated using confusion matrix and performance metrics
